@@ -38,6 +38,7 @@ to login the tmux session
 tmux attach -t name
 ```
 close tmux session
+
 ```
 ctrl+B then leave both keys and press d
 it will run in background
@@ -45,6 +46,7 @@ it will run in background
 now inside tmux run the command below
 ----------------------------------------------------
 now copy the command below and run inside the screen
+
 ```
 cd rl-swarm
 cd modal-login
