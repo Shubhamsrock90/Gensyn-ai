@@ -1,7 +1,13 @@
 # Gensyn-ai
 Run without any error 
 
-if you have 16gb ram vps then add 8gb 
+if you have 16gb ram vps then add 8gb swap meory space to easily run 7 parameters
+```
+sudo fallocate -l 8G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+```
 ---------------------------------
 now simply copy the whole command
 
@@ -11,14 +17,32 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt up
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null
 sudo apt update && sudo apt install -y yarn
-sudo apt update && sudo apt install -y yarn
 git clone https://github.com/gensyn-ai/rl-swarm.git
 
 ```
 -----------------------
 wait till it finishes
 -----------------------
+now creating screen by using tmux
 
+install tmux
+```
+sudo apt install tmux 
+```
+to create session 
+```
+tmux new -s name
+```
+to login the tmux session
+```
+tmux attach -t name
+```
+close tmux session
+```
+ctrl+B then leave both keys and press d
+it will run in background
+
+now inside tmux run the command below
 ----------------------------------------------------
 now copy the command below and run inside the screen
 ```
