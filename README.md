@@ -39,7 +39,6 @@ tmux attach -t name
 ```
 close tmux session
 
-```
 ctrl+B then leave both keys and press d
 it will run in background
 
