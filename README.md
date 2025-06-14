@@ -1,5 +1,7 @@
 # Gensyn-ai
 Run without any error 
+
+if you have 16gb ram vps then add 8gb 
 ---------------------------------
 now simply copy the whole command
 
@@ -16,11 +18,7 @@ git clone https://github.com/gensyn-ai/rl-swarm.git
 -----------------------
 wait till it finishes
 -----------------------
-create a screen
-```
-screen -S gensyn
 
-```
 ----------------------------------------------------
 now copy the command below and run inside the screen
 ```
